@@ -1,0 +1,122 @@
+/** font-family: 'Roboto', sans-serif; **/
+.body__container {
+    width: 1040px;
+    margin: 0 auto;
+}
+.block__welcome {
+    background: url(../img/bg1.jpg) no-repeat;
+    background-size: cover;
+    min-height: 1024px;
+    position: relative;
+}
+
+/** МЕНЮ **/
+.menu {
+    padding: 30px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-item {
+    padding-bottom: 15px;
+}
+.menu-text a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.menu-item {
+    position: relative;
+}
+.menu-text::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -15px;
+    width: 0px;
+    height: 2px;
+    background: red;
+    transition: all 0.5s ease 0s;
+}
+.menu-text:hover::before {
+    width: 10px;
+}
+/********************************/
+
+/** КОНТЕНТ ЧАСТЬ БЛОКА WELCOME **/
+.welcome__content {
+    margin-top: 330px;
+}
+.welcome__title,
+.welcome__subtitle,
+.welcome__slide {
+    width: 430px;
+    margin: 0 auto;
+}
+.welcome__subtitle {
+    padding-bottom: 50px;
+}
+.welcome__title h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+.welcome__subtitle p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.slide-down {
+    margin: 30px;
+}
+.slide-down span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid red;
+    border-right: 5px solid red;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: slide-down 3s infinite;
+}
+.slide-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.slide-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes slide-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+.welcome__social {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+}
+.welcome__social-item a{
+    font-size: 24px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.welcome__social-item a:hover {
+    color: red;
+    transition: 0.5s;
+}
+/*********************************/
