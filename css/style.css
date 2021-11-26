@@ -209,4 +209,67 @@
     font-weight: 700;
     color: black;
 }
+.portfolio__cards {
+    margin-top: 50px;
+    padding-bottom: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio__items {
+    width: 200px;
+    height: 200px;
+    background: #C4C4C4;
+    position: relative;
+}
+.portfolio-item {
+    position: relative;
+}
+.portfolio-item a img {
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    transform:  scale(1);
+    transition: transform 0.3s ease 0s;
+}
+.portfolio-des {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    transform: scale(0);
+    transition: transform 0.7s ease 0s;
+}
+.portfolio-des p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.portfolio-item a::before {
+    content: '';
+    display: block;
+    background: url(../img/portfolio_hover.png);
+    width: 200px;
+    height: 200px;
+    transform: scale(0);
+    transition: all 0.7s ease 0s;
+}
+.portfolio-item a:hover img {
+    transform: scale(0);
+}
+.portfolio-item a:hover::before{
+    transform: scale(1);
+}
+.portfolio-item a:hover .portfolio-des{
+    transform: scale(1);
+}
+
+
+
+
 /********************************/
