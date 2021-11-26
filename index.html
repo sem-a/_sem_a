@@ -12,15 +12,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="liMarquee/liMarquee.css" />
+    <script type="text/javascript" src="liMarquee/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="liMarquee/jquery.liMarquee.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.str').liMarquee();
+        });
+    </script>
 
     <title>_sem_a</title>
 </head>
 
 <body>
+    <!-- ДОБРО ПОЖАЛОВАТЬ -->
     <div class="block__welcome">
         <div class="body__container">
-            
+            <div class="web__develop">
+                <p>WEB DEVELOPER</p>
+            </div>
             <!-- МЕНЮ -->
             <div class="menu">
                 <div class="menu__items">
@@ -83,31 +96,86 @@
                 </div>
                 <div class="welcome__slide">
                     <div class="slide-item">
-                       <a href="#">
-                        <div class="slide-down">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       </a>
-                    </div>
-                </div>
-                <div class="welcome__social">
-                    <div class="welcome__social-item">
-                        <a href="#"><i class="fab fa-vk"></i></i></a>
-                    </div>
-                    <div class="welcome__social-item">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div class="welcome__social-item">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#">
+                            <div class="slide-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <!---------------------------------------------->
         </div>
+        <div class="welcome__social">
+            <div class="welcome__social-item">
+                <a href="#"><i class="fab fa-vk"></i></i></a>
+            </div>
+            <div class="welcome__social-item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="welcome__social-item">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
     </div>
+    <!------------------------------------------------------>
+    <!-- ПОРТФОЛИО -->
+    <div class="block__before-portfolio">
+        <div class="body__container">
+            <div class="before__text-contur">
+                <p>_sem_a</p>
+            </div>
+            <div class="before__title">
+                <p>WEB DEVELOPMENT COMPANY/КОМПАНИЯ ВЕБ-РАЗРАБОТЧИКОВ</p>
+            </div>
+            <div class="before__text">
+                <p>Мы пророки креатива. Создаем и транслируем тренды. Главная задача для нас - производство
+                    качественного контента,</p>
+                <p>который будет полезен и интересен целевой аудитории клиента.</p>
+            </div>
+            <div class="before__text">
+                <p>Мы пророки креатива. Создаем и транслируем тренды. Главная задача для нас - производство
+                    качественного контента,</p>
+                <p>который будет полезен и интересен целевой аудитории клиента.</p>
+            </div>
+        </div>
+        <div class="str str_wrap run__text">
+                &nbsp;<p>#портфолио_sem_a#портфолио_sem_a#портфолио_sem_a#портфолио_sem_a#портфолио_sem_a#портфолио_sem_a</p>
+        </div>
+    </div>
+    <div class="block__portfolio">
+        <div class="body__container">
+            <div class="portfolio__title">
+                <h2>ПОРТФОЛИО</h2>
+            </div>
+            <div class="portfolio__cards">
+                <div class="portfolio__items">
+                    <div class="portfolio-item">
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                </div>
+                <div class="portfolio__items">
+                    <div class="portfolio-item">
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                </div>
+                <div class="portfolio__items">
+                    <div class="portfolio-item">
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                </div>
+                <div class="portfolio__items">
+                    <div class="portfolio-item">
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+    <!------------------------------------------------------>
     <script src="js/script.js"></script>
 </body>
 
