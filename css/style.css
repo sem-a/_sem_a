@@ -189,6 +189,7 @@
 }
 .run__text {
     margin-top: 130px;
+    margin-bottom: 50px;
 }
 .run__text p {
     font-family: 'Roboto', sans-serif;
@@ -200,9 +201,6 @@
 }
 /*********************************/
 /** ПОРТФОЛИО **/
-.portfolio__title {
-    margin-top: 50px;
-}
 .portfolio__title h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 64px;
@@ -268,8 +266,106 @@
 .portfolio-item a:hover .portfolio-des{
     transform: scale(1);
 }
-
-
-
-
+/********************************/
+/** УСЛУГИ **/
+.services__title h2 {
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+    text-align: right;
+}
+.services__items {
+    margin-top: 50px;
+    cursor: pointer;
+}
+.services__cards {
+    margin-left: 180px;
+    height: 640px;
+}
+.services-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services__name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.services__name a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+}
+.services__number p {
+    position: absolute;
+    top: -10px;
+    left: -33px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+.services__name a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translate(-100%, -50%);
+    width: 0px;
+    height: 2px;
+    background: black;
+    transition: width 0.7s ease 0s;
+}
+.services__items:hover .services__name a::before {
+    width: 100px;
+}
+.services__hover {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transform: translate(-50%, 0%);
+    transition: all 0.7s ease 0s;
+}
+.services__hover-text p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.8);
+    color: transparent;
+}
+.services__items:hover .services__hover {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+.services__des {
+    width: 420px;
+    margin-left: 0;
+    margin-top: 30px;
+    display: none;
+}
+.services__des p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+.run__services p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    color: transparent;
+    padding-bottom: 50px;
+}
 /********************************/
