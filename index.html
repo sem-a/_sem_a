@@ -29,7 +29,7 @@
 
 <body>
     <!-- ДОБРО ПОЖАЛОВАТЬ -->
-    <div class="block__welcome">
+    <div class="block__welcome" id="welcome">
         <div class="body__container">
             <div class="web__develop">
                 <p>WEB DEVELOPER</p>
@@ -38,7 +38,7 @@
             <div class="menu">
                 <div class="menu__items">
                     <div class="menu__logo">
-                        <a href="#">
+                        <a href="#welcome">
                             <img src="img/logo.png" alt="logo">
                         </a>
                     </div>
@@ -46,17 +46,17 @@
                 <div class="menu__items">
                     <div class="menu-item">
                         <div class="menu-text">
-                            <a href="#">Портфолио</a>
+                            <a href="#portfolio">Портфолио</a>
                         </div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-text">
-                            <a href="#">Услуги</a>
+                            <a href="#services">Услуги</a>
                         </div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-text">
-                            <a href="#">Контакты</a>
+                            <a href="#contact">Контакты</a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                 <div class="menu__items">
                     <div class="menu-item">
                         <div class="menu-text">
-                            <a href="#">+7 (952) 789-99-89</a>
+                            <a href="tel: +7 952 789-99-89">+7 (952) 789-99-89</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="welcome__slide">
                     <div class="slide-item">
-                        <a href="#">
+                        <a href="#portfolio">
                             <div class="slide-down">
                                 <span></span>
                                 <span></span>
@@ -110,19 +110,19 @@
         </div>
         <div class="welcome__social">
             <div class="welcome__social-item">
-                <a href="#"><i class="fab fa-vk"></i></i></a>
+                <a href="https://vk.com/sem___a" target="_blank"><i class="fab fa-vk"></i></i></a>
             </div>
             <div class="welcome__social-item">
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/_sem__a/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="welcome__social-item">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/79527899989" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </div>
     <!------------------------------------------------------>
     <!-- ПОРТФОЛИО -->
-    <div class="block__before-portfolio">
+    <div class="block__before-portfolio" id="portfolio">
         <div class="body__container">
             <div class="before__text-contur">
                 <p>_sem_a</p>
@@ -198,7 +198,7 @@
     </div>
     <!------------------------------------------------------>
     <!-- УСЛУГИ -->
-    <div class="block__services">
+    <div class="block__services" id="services">
         <div class="body__container">
             <div class="services__title">
                 <h2>УСЛУГИ</h2>
@@ -302,6 +302,79 @@
         </div>
     </div>
     <!------------------------------------------------------>
+    <!-- КОНТАКТЫ -->
+    <div class="block__contact" id="contact">
+        <div class="body__container">
+            <div class="contact__title">
+                <h2>КОНТАКТЫ</h2>
+            </div>
+            <div class="contact__subtitle">
+                <p>OUR</p>
+                <p>CONTACTS</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__number">
+                    <p>ТЕЛЕФОН:</p>
+                    <p>+7 (952) 789-99-89</p>
+                </div>
+                <div class="contact__social">
+                    <div class="contact__social-item">
+                        <a href="https://vk.com/sem___a" target="_blank"><i class="fab fa-vk"></i></i></a>
+                    </div>
+                    <div class="contact__social-item">
+                        <a href="https://www.instagram.com/_sem__a/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="contact__social-item">
+                        <a href="https://wa.me/79527899989" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact__up">
+                    <a href="#welcome">
+                        <img src="img/up.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="contact__form">
+                <div class="contact-form__title">
+                    <p>Отправьте нам электронное письмо, введя ваши данные и</p>
+                    <p>ваш комментарий или вопрос! </p>
+                </div>
+                <form class="form__items">
+                    <div class="form-item">
+                        <label for="name" class="contact-form__label">Ваше имя(обязательно)</label>
+                        <input type="text" id="name" name="name" class="contact-form__input">
+                    </div>
+                    <div class="form-item">
+                        <label for="email" class="contact-form__label">Ваш телефон или E-mail(обязательно)</label>
+                        <input type="text" id="email" name="email" class="contact-form__input">
+                    </div>
+                    <div class="form-item">
+                        <label for="service" class="contact-form__label">Выберите услугу(обязательно)</label>
+                        <select name="service" id="service" class="contact-form__select">
+                            <option value="website">01. WEBSITE</option>
+                            <option value="photo">02. PHOTO&VIDEO PRODUCT</option>
+                            <option value="content">03. CONTENT PLAN</option>
+                            <option value="instagram">04. MAINTAINING AN INSTAGRAM</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="inst" class="contact-form__label">Instagram</label>
+                        <input type="text" id="inst" name="inst" class="contact-form__input">
+                    </div>
+                    <div class="form-item">
+                        <label for="comment" class="contact-form__label">Ваш комментарий</label>
+                        <div class="contact-form__textarea">
+                            <textarea name="comment" id="comment"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------>
+    <div class="block__footer">
+    </div>
     <script src="js/script.js"></script>
 </body>
 

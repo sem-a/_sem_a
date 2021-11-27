@@ -277,7 +277,7 @@
     text-align: right;
 }
 .services__items {
-    margin-top: 50px;
+    margin-top: 60px;
     cursor: pointer;
 }
 .services__cards {
@@ -366,6 +366,130 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: red;
     color: transparent;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 /********************************/
+/** КОНТАКТЫ **/
+.block__contact {
+    background: url(../img/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 1024px;
+    position: relative;
+}
+.contact__title h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    padding-top: 100px;
+}
+.contact__subtitle p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    color: transparent;
+    text-align: right;
+}
+.contact__form {
+    position: absolute;
+    right: 0;
+}
+.contact-form__title {
+    margin-top: 80px;
+}
+.contact-form__title p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.form__items {
+    padding-top: 50px;
+}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.contact-form__label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+}
+input.contact-form__input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    width: 395px;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.contact-form__select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    width: 395px;
+    height: 50px;
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.contact-form__textarea textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    width: 395px;
+    height: 70px;
+    resize: none;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact__content {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 190px;
+}
+.contact__number p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+.contact__social {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.contact__social-item a{
+    font-size: 24px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.contact__social-item a:hover {
+    color: red;
+    transition: 0.5s;
+}
+.contact__up {
+    margin-top: 280px;
+}
+/******************************/
+.block__footer {
+    background: black;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
