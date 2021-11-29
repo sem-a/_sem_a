@@ -493,3 +493,48 @@ input.contact-form__input {
     position: absolute;
     bottom: 0;
 }
+
+/** АНИМАЦИЯ **/
+.welcome__title._anim-item {
+    opacity: 0;
+    transform: translateY(50%);
+}
+.welcome__subtitle._anim-item {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+.welcome__title._anim-item._anim-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease 0.5s;
+}
+.welcome__subtitle._anim-item._anim-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease .5s;
+}
+.portfolio__cards .portfolio__items._anim-item {
+    opacity: 0;
+    transform: translateY(50%);
+}
+.portfolio__cards .portfolio__items:nth-child(1)._anim-item._anim-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s ease 0s;
+}
+.portfolio__cards .portfolio__items:nth-child(2)._anim-item._anim-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s ease 0.5s;
+}
+.portfolio__cards .portfolio__items:nth-child(3)._anim-item._anim-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s ease 1s;
+}
+.portfolio__cards .portfolio__items:nth-child(4)._anim-item._anim-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s ease 1.5s;
+}
+/******************************/
