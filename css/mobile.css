@@ -1,0 +1,199 @@
+@media screen and (max-width: 480px) {
+    .body__container {
+        width: 260px;
+    }
+    .block__welcome {
+        min-height: auto;
+        min-width: none;
+        background: url(../img/bg-mobile.png);
+        background-size: cover;
+    }
+    .menu,
+    .welcome__slide,
+    .web__develop {
+        display: none;
+    }
+    .welcome__content {
+        margin-top: 0;
+        padding-top: 135px;
+    }
+    .welcome__title,
+    .welcome__subtitle {
+        width: 260px;
+    }
+    .welcome__subtitle {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .welcome__title h1 {
+        font-size: 32px;
+        margin: 0 auto;
+    }
+    .welcome__subtitle p {
+        font-size: 12px;
+    }
+    .social__container {
+        width: 260px;
+        margin: 0 auto;
+    }
+    .welcome__social {
+        margin-top: 155px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .welcome__social-item {
+        display: flex;
+        align-items: center;
+    }
+    .welcome__social-item a {
+        font-size: 30px;
+    }
+    .social__text {
+        display: block;
+    }
+    .social__text p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .before__text-contur {
+        display: none;
+    }
+    .before__title {
+        padding-top: 30px;
+    }
+    .before__title p {
+        margin-left: 0;
+        padding-bottom: 30px;
+    }
+    .before__text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .before__text p {
+        font-size: 12px;
+    }
+    .run__text {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .run__text p{
+        font-weight: 700;
+        font-size: 14px;
+        -webkit-text-stroke-width: 1px;
+    }
+    .portfolio__title h2{
+        font-size: 32px;
+        text-align: center;
+    }
+    .portfolio__cards {
+        margin-top: 30px;
+        padding-bottom: 0;
+        flex-direction: column;
+        justify-content: none;
+    }
+    .portfolio__items {
+        margin-bottom: 30px;
+    }
+    .services__title h2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .services__items {
+        margin-top: 30px;
+    }
+    .services__cards {
+        margin-left: 0;
+        height: 350px;
+    }
+    .services__hover,
+    .services__name a::before {
+        display: none;
+    }
+    .services__name a {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .services__number p {
+        font-size: 12px;
+        top: -2px;
+        left: 0;
+    }
+    .services__des {
+        width: 260px;
+        margin-top: 10px;
+    }
+    .services__des p {
+        font-size: 12px;
+    }
+    .run__services p {
+        font-size: 14px;
+        font-weight: 700;
+        -webkit-text-stroke-width: 1px;
+        margin-bottom: 30px;
+    }
+    .block__contact {
+        background-size: auto;
+        min-height: 700px;
+    }
+    .contact__title h2{
+        font-size: 32px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .contact__subtitle {
+        display: none;
+    }
+    .contact__subtitle-rotate {
+        display: block;
+        position: absolute;
+        width: 17px;        
+        top: 150px;
+        left: 0;
+    }
+    .contact__subtitle-rotate p {
+        font-size: 24px;
+        -webkit-text-stroke-width: 1px;
+        padding-top: 10px;
+    }
+    .contact-form__title {
+        width: 210px;
+        margin-top: 30px;
+    }
+    .contact-form__title p {
+        font-size: 12px;
+    }
+    .form__items {
+        width: 210px;
+        padding-top: 30px;
+    }
+    .contact-form__label {
+        font-size: 12px;
+    }
+    input.contact-form__input {
+        font-size: 12px;
+        width: 210px;
+        height: 24px;
+    }
+    .contact-form__select {
+        font-size: 12px;
+        width: 210px;
+        height: 24px;
+    }
+    .contact-form__textarea textarea {
+        font-size: 12px;
+        width: 210px;
+        height: 40px;
+    }
+    .contact__content {
+        display: none;
+    }
+}

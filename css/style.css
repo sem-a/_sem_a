@@ -142,6 +142,9 @@
     color: red;
     transition: 0.5s;
 }
+.social__text {
+    display: none;
+}
 /*********************************/
 
 /** БЛОК ПЕРЕД ПОРТФОЛИО **/
@@ -219,6 +222,7 @@
     height: 200px;
     background: #C4C4C4;
     position: relative;
+    margin-bottom: 0;
 }
 .portfolio-item {
     position: relative;
@@ -275,6 +279,7 @@
     font-weight: 700;
     color: black;
     text-align: right;
+    padding-bottom: 0px;
 }
 .services__items {
     margin-top: 60px;
@@ -300,6 +305,7 @@
     font-size: 48px;
     font-weight: 700;
     color: black;
+    margin-left: 0px;
 }
 .services__number p {
     position: absolute;
@@ -366,7 +372,7 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: red;
     color: transparent;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 /********************************/
 /** КОНТАКТЫ **/
@@ -387,6 +393,16 @@
     padding-top: 100px;
 }
 .contact__subtitle p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    color: transparent;
+    text-align: right;
+}
+.contact__subtitle-rotate {
+    display: none;
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 700;
@@ -538,3 +554,9 @@ input.contact-form__input {
     transition: all 1s ease 1.5s;
 }
 /******************************/
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 700px) {
+
+}

@@ -19,5 +19,5 @@ function onEntry(entry) {
   let observer = new IntersectionObserver(onEntry, options);
   let elements = document.querySelectorAll('._anim-item');
   for (let elm of elements) {
-    observer.observe(elm);
+    observer.observe(elm); 
   }
